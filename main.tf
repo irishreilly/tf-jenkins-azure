@@ -7,9 +7,9 @@
 terraform {
     required_providers  {
         azurerm =   {
-          features {}
+            source  =   "hashicorp/azurerm"
         }
-   }
+    }
 }
 
 # Provider Block
