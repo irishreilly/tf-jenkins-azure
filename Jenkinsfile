@@ -89,7 +89,9 @@ pipeline{
                 sh 'terraform ${action} --auto-approve'
             }
         }
-        
+    }
+}
+
 /*
         stage('Terraform Apply'){
             steps {
@@ -133,4 +135,3 @@ pipeline{
         
     }
 */
-}
