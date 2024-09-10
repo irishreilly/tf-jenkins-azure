@@ -83,7 +83,13 @@ pipeline{
             }
         
         }
-    
+
+        stage('Terraform action') {
+            steps {
+                sh 'terraform ${action} --auto-approve'
+            }
+        }
+        
 /*
         stage('Terraform Apply'){
             steps {
@@ -104,7 +110,6 @@ pipeline{
                 }
             }
         }
-*/
 
  stage('Terraform Destroy'){
             steps {
@@ -127,4 +132,5 @@ pipeline{
         }
         
     }
+*/
 }
