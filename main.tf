@@ -15,7 +15,7 @@ terraform {
 # Provider Block
 
 provider "azurerm" {
-    version         =   "~> 4.x"
+    version         =   "~> 4.0"
     client_id       =   var.client_id
     client_secret   =   var.client_secret
     subscription_id =   var.subscription_id
