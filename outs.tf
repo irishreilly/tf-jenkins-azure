@@ -3,10 +3,10 @@
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 
 
-// output "resource-group-name" {
-//     description     =   "Print the name of the resource group"
-//     value           =   module.vnet.resource-group-name
-// }
+output "resource-group-name" {
+    description     =   "Print the name of the resource group"
+    value           =   module.vnet.resource-group-name
+}
 
 // output "resource-group-location" {
 //     description     =   "Print the location of the resource group"
